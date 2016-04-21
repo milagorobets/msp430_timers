@@ -96,7 +96,7 @@ void start_timer(timer_prototype* timer)
 void stop_timer(timer_prototype* timer)
 {
 	// Set mode control to 00; halts the timer
-	*(timer->CTL_ptr) &= ~MC_3;
+	*(timer->CTL_ptr) &= ~MC_0;
 }
 
 void timer_reset_INTERRUPT_status(timer_prototype* timer)
